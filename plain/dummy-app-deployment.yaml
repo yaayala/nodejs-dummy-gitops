@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-dummy-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-dummy
+  template:
+    metadata:
+      labels:
+        app: nodejs-dummy
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/lefranfry/ga-c1-workflows/dummy-app:1.0
+          ports:
+            - containerPort: 8081
