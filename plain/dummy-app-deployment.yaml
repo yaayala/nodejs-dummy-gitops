@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-dummy-deployment
+  name: nodejs-dummy-deployment-other
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nodejs-dummy
