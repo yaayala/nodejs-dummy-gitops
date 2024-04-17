@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/lefranfry/ga-c1-workflows/dummy-app:1.0
+          image: ghcr.io/lefranfry/ga-c1-workflows/dummy-app:1.1
           ports:
             - containerPort: 8081
